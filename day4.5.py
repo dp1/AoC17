@@ -513,7 +513,7 @@ xzvfbf fopmfxu mvftgr mfupoxf coyhof talcc vpkslo"""
 
 res = 0
 for l in data.split('\n'):
-  ll = [''.join(sorted(x)) for x in l.split(' ']
+  ll = [''.join(sorted(x)) for x in l.split(' ')]
   if len(ll) == len(set(ll)):
     res += 1
 print res
