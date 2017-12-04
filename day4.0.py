@@ -512,7 +512,7 @@ azz ajdcqkd bcafn zaz dcjaqdk gylyzo
 xzvfbf fopmfxu mvftgr mfupoxf coyhof talcc vpkslo"""
 
 res = 0
-for l in data.split('\n')
+for l in data.split('\n'):
   ll = l.split(' ')
   if len(ll) == len(set(ll)):
     res += 1
