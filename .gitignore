@@ -1,2 +1,5 @@
 __pycache__/
 *.exe
+*.o
+*.stackdump
+*.i64

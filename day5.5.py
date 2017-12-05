@@ -3,7 +3,7 @@ data = [int(x) for x in data.split(' ')]
 
 p = 0
 res = 0
-while p >= 0 and p < len(data):
+while 0 <= p < len(data):
 	j = data[p]
 	if j > 2:
 		data[p] -= 1
