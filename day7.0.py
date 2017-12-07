@@ -1,5 +1,5 @@
 with open("day7.txt", "r") as fin:
-	data = fin.read().split('\n')
+	data = fin.read().strip().split('\n')
 
 class Node:
 	def __init__(self, value, children):
