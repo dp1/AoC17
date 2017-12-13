@@ -8,10 +8,10 @@ with open("day11.txt", "r") as fin:
 # e   f
 #   g
 #
-# To this, being skewed to the side:
+# To this, skewed to the side:
 # a c
 # b D f
-# e g
+#   e g
 
 ops = {'n': (-1, -1), 'nw': (0, -1), 'sw': (1, 0), 's': (1, 1), 'se': (0, 1), 'ne': (-1, 0)}
 
