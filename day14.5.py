@@ -15,13 +15,12 @@ def knot(datain):
 		pos, skip = round(pos, skip, data, h)
 	return ''.join("%02x" % reduce(lambda x,y: x^y, h[i:i+16]) for i in range(0, len(h), 16))
 
-grid = [[0 for _ in range(128)] for _ in range(128)]	
 data = 'wenycdww'
+grid = [[0 for _ in range(128)] for _ in range(128)]
 for i in range(128):
-	h = ('0'*128 + bin(int(knot(data + '-' + str(i)), 16))[2:])[-128:]
+	h = bin(int(knot(data + '-' + str(i)), 16))[2:].rjust(128, '0')
 	for j, ch in enumerate(h):
 		grid[i][j] = 1 if ch == '1' else 0
-	print i
 
 def visit(x, y):
 	if x < 0 or x > 127:
@@ -35,7 +34,6 @@ def visit(x, y):
 	visit(x+1, y)
 	visit(x, y-1)
 	visit(x, y+1)
-
 
 res = 0
 for i in range(128):
