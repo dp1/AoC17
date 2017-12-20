@@ -1,12 +1,6 @@
 with open("day20.txt", "r") as fin:
 	data = fin.read().strip().split('\n')
 
-
-# data = """p=<-6,0,0>, v=< 3,0,0>, a=< 0,0,0>
-# p=<-4,0,0>, v=< 2,0,0>, a=< 0,0,0>
-# p=<-2,0,0>, v=< 1,0,0>, a=< 0,0,0>
-# p=< 3,0,0>, v=<-1,0,0>, a=< 0,0,0>""".split('\n')
-
 class Particle:
 	def __init__(self, l):
 		l = l[:-1].split('>, ')
