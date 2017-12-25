@@ -1,5 +1,5 @@
 with open("day23.txt", "r") as fin:
-	data = fin.read().strip().split('\n')
+	data = fin.read().strip().replace('\r', '').split('\n')
 
 regs = {chr(x):0 for x in range(ord('a'), ord('z') + 1)}
 ip = 0
